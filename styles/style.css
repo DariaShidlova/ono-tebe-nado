@@ -56,8 +56,9 @@
     width: 1100px;
     height: 757px;
     margin-top: 92px;
-    background-image: url(https://s3-alpha-sig.figma.com/img/0ebc/4c3a/92bfb672f477e421e7738fd6416ff19b?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iR2AXTcmUB85dmkSjIxaVyR3J7F3yO~vpdyBYjfJ-gGmSIUkWoqQbse7zlBcPcr-rYVQn98EXTp3n8alUp1mkjdVdM3yzDAAWsgDM48Ct4ZB3960kDaIBgnmlKfTs0HNRAcZsLigFErQYQyg-4m6abRtryyAnez8Ohqmw0CS3TCEZ3SVqYuh0CMmokXhci~Iz4UkpP4JjcD1lrR~pDrFxRoC4rHoRSrFvxaFeRBrsDLN7QK7bfb60B5OGXZcFz9bXFUKbcZwJcZbgif09xAz1epeMftEpPBtR7tjvK0iFF8ubZhlLvkVF3aAMJoV~KdKWwevVgvzjZaDz494x~DP4g__);
+    background-image: url(../images/cover.jpg);
     background-position: center;
+    background-size:cover;
 
 }
 
@@ -109,40 +110,59 @@ button {
 	background-color: transparent;
 }
 
-
-h2 {
-    background-color:#FF69B4;
-    margin-top: 170px;
-
-   }
-
 .lots{
-    display: grid;
     width: 1052px;
     height: 692px;
     background-color: aqua;
-    
     justify-content: space-around;
-
 }
 
-.lot-one {
-    background-color:blueviolet
-
+.lots__heading {
+    background-color:#FF69B4;
+    margin-top: 170px;
+    width: 121px;
+    height: 47px;
+    margin-left: 40px;
+    font-family: Raleway, sans-serif;
+    font-size: 40px;
+    color:black;
+    text-transform: uppercase;
 }
 
-.lot-two {
-    background-color: beige;
+.card {
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 34px;
+}
+
+.card_type_film {
+    background-image: url(../../ono-tebe-nado/images/card-lot-01.jpg);
+    background-position: center;
+    background-size:cover;
+    list-style-type: none;
+    color:#FFFFFF;
     width: 334px;
     height: 563px;
-   
 }
 
-.lot-three {
-    background-color:aquamarine;
+.card_type_book {
+    background-image: url(../images/card-lot-02.jpg);
+    background-position: center;
+    background-size:cover;
+    color:#FFFFFF;
     width: 334px;
     height: 563px;
-    
+    list-style-type:  none;
+}
+
+.card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
+    background-position: center;
+    background-size:cover;
+    color:#FFFFFF;
+    width: 334px;
+    height: 563px;
+    list-style-type:  none;
 }
 
 
