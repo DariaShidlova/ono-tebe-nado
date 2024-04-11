@@ -65,7 +65,7 @@
 .overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);   
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 h1 {
@@ -118,7 +118,6 @@ button {
 }
 
 .lots__heading {
-    background-color:#FF69B4;
     margin-top: 170px;
     width: 121px;
     height: 47px;
@@ -135,34 +134,39 @@ button {
     margin-top: 34px;
 }
 
-.card_type_film {
-    background-image: url(../../ono-tebe-nado/images/card-lot-01.jpg);
+.card__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.card_type_book,
+.card_type_film,
+.card_type_picture {
     background-position: center;
     background-size:cover;
     list-style-type: none;
     color:#FFFFFF;
     width: 334px;
     height: 563px;
+    padding: 50px 40px;
+}
+
+.card_type_film {
+    background-image: url(../../ono-tebe-nado/images/card-lot-01.jpg);
+   
 }
 
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
-    background-position: center;
-    background-size:cover;
-    color:#FFFFFF;
-    width: 334px;
-    height: 563px;
-    list-style-type:  none;
+    
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
-    background-position: center;
-    background-size:cover;
-    color:#FFFFFF;
-    width: 334px;
-    height: 563px;
-    list-style-type:  none;
+ 
 }
 
 
