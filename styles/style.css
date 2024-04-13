@@ -59,7 +59,6 @@
     background-image: url(../images/cover.jpg);
     background-position: center;
     background-size:cover;
-
 }
 
 .overlay {
@@ -113,12 +112,13 @@ button {
 .lots{
     width: 1052px;
     height: 692px;
-    background-color: aqua;
-    justify-content: space-around;
+    margin-top: 229px;
+    margin-left: 24px;
+   
+    
 }
 
 .lots__heading {
-    margin-top: 170px;
     width: 121px;
     height: 47px;
     margin-left: 40px;
@@ -130,43 +130,58 @@ button {
 
 .card {
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     margin-top: 34px;
 }
 
+.lots__card-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style-type: none;
+   
+}
+
+.lots__card_list_item {
+    padding: 50px 40px;
+    
+
+}
+
 .card__title {
-    font-weight: 700;
     font-size: 22px;
-    line-height: 120%;
     text-decoration: underline;
     text-transform: uppercase;
+    font-family: Raleway, sans-serif;
+}
+
+.card__text{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: Raleway, sans-serif;
 }
 
 .card_type_book,
 .card_type_film,
 .card_type_picture {
     background-position: center;
-    background-size:cover;
-    list-style-type: none;
+    background-size:cover; 
     color:#FFFFFF;
     width: 334px;
-    height: 563px;
-    padding: 50px 40px;
+    height: 563px; 
 }
 
 .card_type_film {
     background-image: url(../../ono-tebe-nado/images/card-lot-01.jpg);
-   
 }
 
 .card_type_book {
-    background-image: url(../images/card-lot-02.jpg);
-    
+    background-image: url(../images/card-lot-02.jpg);  
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
- 
 }
 
 
