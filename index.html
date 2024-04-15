@@ -11,15 +11,19 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__menu" >
-       <ul>
-        <li type="none" class="header__links-list-item_no-bullit">главная</li>
-        <li type="circle" class="header__links-list">посмотреть лоты</li>
-        <li type="circle" class="header__links-list">об аукционе</li>
-       </ul>
-      </div>
+      <ul class="header__links-list">
+        <li class="header__links-list-item_no-bullit">
+          <a href="#">главная</a>
+        </li>
+        <li class="header__links-list-item">
+          <a href="#">посмотреть лоты</a>
+        </li>
+        <li class="header__links-list-item">
+          <a href="#">об аукционе</a>
+        </li>
+      </ul>
       <div class="header__logo">
-        <img
+        <img class="header__logo-image"
           src="./images/logo-black.svg"
           alt="Логотип"
         />
@@ -101,18 +105,49 @@
         </section>
       </main>
       <footer class="footer">
-        <section class="header__address">
+        <section class="address">
           <a href="tel:+99995555555">+9 999 555 5555</a><br>
           <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
           <p>наб. Принсенграхт 263- 265, Амстердам</p>
         </section>
         <nav class="footer__menu">
-        <ul>
-          <li>главная</li>
-
+        <ul class="footer__menu-list">
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link_active" href="#0">главная</a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link" href="#0">посмотреть лоты</a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link" href="#0">об аукционе</a>
+          </li>
         </ul>
       </nav>
-        <section class="socials"></section>
+        <section class="socials">
+          <ul class="footer__social-list">
+            <li class="footer__social-list-item">
+              <a href="#" class="footer__social-link">
+                <img class="footer__social-icon"
+                src="../ono-tebe-nado/images/yt.svg"
+                alt="логотип ютуб">
+              </a>
+            </li>
+            <li class="footer__social-list-item">
+              <a href="#" class="footer__social-link">
+                <img class="footer__social-icon"
+                src="../ono-tebe-nado/images/vk.svg"
+                alt="логотип вк">
+              </a>
+            </li>
+            <li class="footer__social-list-item">
+              <a href="#" class="footer__social-link">
+                <img class="footer__social-icon"
+                src="../ono-tebe-nado/images/pinterest.svg"
+                alt="логотип пинтерест">
+              </a>
+            </li>
+          </ul>
+        </section>
       </footer>
       
     
