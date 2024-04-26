@@ -1,9 +1,8 @@
 .header {
     width: 1052px;
-    height: 105px;
     margin: 92px 24px 0;
     display: grid;
-    grid-template-columns: 418px 1fr 2fr;
+    grid-template-columns: 1fr min-content 1fr;
 }
 
 .header__links-list {
@@ -18,6 +17,10 @@
 
 .header__links-list-item_no-bullit {
     list-style-type: none;
+}
+
+.header__link_active {
+    text-decoration: none;
 }
 
 .header__links-list-item {
@@ -36,10 +39,11 @@
 }
 
 .header__address {
+    padding-left: 190px;
     font-size: 18px;
     font-weight: 400;
     line-height: 24.3px;
-    padding-left: 160px;
+    font-style: normal;
 }
 
 /*начало секции cover*/
@@ -47,40 +51,41 @@
 .cover {
     position: relative;
     width: 1100px;
-    height: 757px;
-    margin-top: 96px;
-    background-image: url(../images/cover.jpg);
+    min-height: 757px;
+    margin-top: 90px;
+    background-image: url(/images/cover.jpg);
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     z-index: 1;
 }
 
 .overlay {
     position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); 
+    background: rgba(0, 0, 0, 0.6);
     z-index: -1;
 }
 
 .cover__title {
     display: flex;
     flex-direction: column;
-    padding: 165px 50px 135px;
-    font-family: Raleway;
+    padding: 165px 50px 132px;
+    font-family: Raleway, sans-serif;
     font-size: 100px;
     font-weight: 700;
-    color: #FFFFFF;
+    color: #ffffff;
     text-transform: uppercase;
-    line-height: 119px;
+    line-height: 120px;
 }
 
 .aligned-text {
-   letter-spacing: 0.3em;
+    letter-spacing: 0.3em;
 }
 
 .aligned-text_center {
-    text-align: center; 
+    text-align: center;
 }
 
 .aligned-text_right {
@@ -102,7 +107,7 @@
 
 .cover__description-text {
     padding-left: 55px;
-    color:#FFFFFF;
+    color: #ffffff;
     font-family: Raleway, sans-serif;
     text-transform: uppercase;
     font-size: 23px;
@@ -113,16 +118,16 @@
 .bet-button {
     margin-left: 60px;
     width: 256px;
-    height: 51px;
-    border: 1px  1px 1px 1px;
-    border-color: #FFFFFF;
+    min-height: 51px;
+    border-style: solid;
+    border: 1px 1px 1px 1px;
+    border-color: #ffffff;
     font-size: 23px;
-    color:#FFFFFF;
+    color: #ffffff;
     font-family: Raleway, sans-serif;
     text-transform: uppercase;
-    background-image: none; 
-	background: transparent;
-	background-color: transparent;
+    background-image: none;
+    background-color: transparent;
 }
 
 /*начало секции Лоты*/
@@ -143,6 +148,7 @@
 .lots__card-list {
     display: flex;
     gap: 25px;
+    flex-wrap: wrap;
     list-style: none;
     margin: 27px 0 30px 0;
 }
@@ -166,19 +172,19 @@
     justify-content: space-between;
     height: 100%;
     background-position: center;
-    background-size: cover; 
+    background-size: cover;
 }
 
 .card_type_film {
-    background-image: url(../../ono-tebe-nado/images/card-lot-01.jpg); 
+    background-image: url(/images/card-lot-01.jpg);
 }
 
 .card_type_book {
-    background-image: url(../images/card-lot-02.jpg); 
+    background-image: url(/images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-    background-image: url(../images/card-lot-03.jpg);  
+    background-image: url(/images/card-lot-03.jpg);
 }
 
 .card__title {
@@ -187,7 +193,7 @@
     font-weight: 700;
     text-decoration: underline;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 51px 40px 0px;
 }
 
@@ -196,7 +202,7 @@
     font-size: 20px;
     line-height: 24px;
     font-weight: 400;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .lots__look-more-link {
@@ -216,8 +222,8 @@
 .logo__column {
     width: 240px;
     height: 240px;
-    margin: 35px 72px 320px 47px; 
-    background-color: black;     
+    margin: 35px 72px 320px 47px;
+    background-color: black;
     border-radius: 50%;
 }
 
@@ -227,7 +233,6 @@
 
 .about__column {
     width: 693px;
-    height: 449;
     margin: 133px 0 0 0;
 }
 
@@ -239,22 +244,19 @@
     margin-bottom: 100px;
 }
 
-.about__text-one,
-.about__text-two {
+.about__text {
+    display: flex;
+    flex-direction: column;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-}
-
-.about__text-one {
-    margin-bottom: 24px;
+    margin-top: 1.5em;
 }
 
 /*Секция footer*/
 
 .footer {
     width: 1000px;
-    height: 98px;
     display: flex;
     justify-content: space-between;
     margin: 0 50px 88px;
@@ -262,27 +264,28 @@
 
 .address {
     width: 240.52px;
-    height: 98px;  
     font-size: 18px;
     font-weight: 400;
     line-height: 24.3px;
     text-align: left;
+    font-style: normal;
 }
 
 .footer__menu {
-    width: 149px;
-    height: 64px;
+    min-width: 149px;
     text-align: center;
     font-size: 18px;
     font-weight: 400;
     line-height: 21.13px;
 }
 
-.footer__menu-list { /* ul*/
+.footer__menu-list {
+    /* ul*/
     list-style-type: none;
 }
 
-.footer__menu-link_active { /*главная */
+.footer__menu-link_active {
+    /*главная */
     text-decoration: none;
 }
 
@@ -294,14 +297,5 @@
 
 .footer__social-icon {
     width: 48px;
-    height: 48px; 
+    height: 48px;
 }
-
-
-
-
-
-
-
-
-
