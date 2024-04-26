@@ -7,12 +7,13 @@
 
 .header__links-list {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: center;
     font-size: 18px;
     font-weight: 400;
     line-height: 21.13px;
     color: #000;
+    padding: 0px 23px 0px 10px;
 }
 
 .header__links-list-item_no-bullit {
@@ -39,11 +40,11 @@
 }
 
 .header__address {
-    padding-left: 190px;
     font-size: 18px;
     font-weight: 400;
     line-height: 24.3px;
     font-style: normal;
+    padding: 5px 25px 2px 190px;
 }
 
 /*начало секции cover*/
